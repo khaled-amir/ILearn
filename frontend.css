@@ -1,0 +1,126 @@
+:root {
+    --mainColor: #0f0a05;
+    --secColor: #f3b92f;
+    --thirdColor: rgba(255, 255, 255, 0.2);
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+    background-color: var(--mainColor);
+    color: white;
+    overflow: hidden;
+}
+.title {
+    font-size: 35px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+.title span {
+    color: var(--secColor);
+    font-weight: 900;
+}
+.btn {
+    width: 240px;
+    height: 40px;
+    background-color: var(--secColor);
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.btn:hover {
+    background-color: #ffb300;
+}
+.container {
+    width: 100%;
+    height: 100vh;
+}
+.container header {
+    width: 100%;
+    height: 80px;
+    padding-top: 15px;
+    background-color: var(--mainColor);
+    text-align: center;
+}
+.container header .logo h1 {
+    color: white;
+}
+.container header .logo h1 span {
+    color: var(--secColor);
+    font-weight: 900;
+}
+.name {
+    width: 100%;
+    height: 30px;
+    background-color: var(--thirdColor);
+    padding: 8px;
+    text-align: center;
+}
+.main {
+    width: 100%;
+    height: calc(100% - 110px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.trackContent {
+    width: 10%;
+    background-color: var(--thirdColor);
+    border-top: 1px solid white;
+    border-right: 1px solid white;
+    height: 100%;
+    padding: 30px;
+}
+.trackContent h3 {
+    margin-bottom: 20px;
+    color: var(--secColor);
+}
+.trackContent ul {
+    list-style-type: none;
+}
+.trackContent ul li {
+    margin-bottom: 20px;
+    font-size: 12px;
+    cursor: pointer;
+    user-select: none;
+}
+.trackContent ul li:hover {
+    color: var(--secColor);
+}
+.courseContent {
+    width: 20%;
+    height: 100%;
+    background-color: var(--thirdColor);
+    border-top: 1px solid white;
+    border-right: 1px solid white;
+    padding: 30px;
+}
+.courseContent ul {
+    list-style-position: inside;
+}
+.courseContent ul li {
+    margin-bottom: 20px;
+    font-size: 14px;
+    cursor: pointer;
+    user-select: none;
+}
+.courseContent ul li:hover {
+    color: var(--secColor);
+}
+.courseContent h3 {
+    margin-bottom: 20px;
+    color: var(--secColor);
+}
+.content {
+    width: 70%;
+    height: 100%;
+}
